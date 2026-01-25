@@ -1,0 +1,158 @@
+{
+  "timestamp": "2026-01-25T21:57:39+08:00",
+  "version": "1.0.0",
+  "project": {
+    "name": "BitBrowser Automation",
+    "description": "比特浏览器自动化管理工具，用于批量管理 Google 账号的学生验证流程",
+    "languages": {
+      "python": 85,
+      "vue": 10,
+      "javascript": 5
+    },
+    "framework": {
+      "backend": "FastAPI",
+      "frontend": "Vue 3 + Vite",
+      "automation": "Playwright",
+      "database": "SQLite"
+    }
+  },
+  "modules": [
+    {
+      "name": "root",
+      "path": "./",
+      "claudeMd": "./CLAUDE.md",
+      "entry": ["main.py", "database.py"],
+      "interfaces": ["bit_api.py", "create_window.py"],
+      "tests": null,
+      "coverage": {
+        "scanned": true,
+        "hasEntry": true,
+        "hasInterface": true,
+        "hasTests": false,
+        "hasDataModel": true
+      }
+    },
+    {
+      "name": "web-backend",
+      "path": "./web/backend/",
+      "claudeMd": "./web/backend/CLAUDE.md",
+      "entry": ["main.py"],
+      "interfaces": ["routers/accounts.py", "routers/browsers.py", "routers/tasks.py", "routers/config.py", "websocket.py"],
+      "tests": null,
+      "dataModel": ["schemas.py"],
+      "coverage": {
+        "scanned": true,
+        "hasEntry": true,
+        "hasInterface": true,
+        "hasTests": false,
+        "hasDataModel": true
+      }
+    },
+    {
+      "name": "web-frontend",
+      "path": "./web/frontend/",
+      "claudeMd": "./web/frontend/CLAUDE.md",
+      "entry": ["src/main.ts", "src/App.vue"],
+      "interfaces": ["src/views/AccountsView.vue", "src/views/BrowsersView.vue", "src/views/TasksView.vue", "src/views/ConfigView.vue"],
+      "tests": null,
+      "coverage": {
+        "scanned": true,
+        "hasEntry": true,
+        "hasInterface": true,
+        "hasTests": false,
+        "hasDataModel": false
+      }
+    }
+  ],
+  "files": {
+    "total_estimated": 35,
+    "scanned": 35,
+    "coverage_percent": 100,
+    "by_type": {
+      "python": 22,
+      "vue": 6,
+      "json": 3,
+      "markdown": 4
+    }
+  },
+  "automation_scripts": [
+    {
+      "name": "setup_2fa.py",
+      "description": "首次设置 2FA"
+    },
+    {
+      "name": "reset_2fa.py",
+      "description": "重置/更新 2FA 密钥"
+    },
+    {
+      "name": "age_verification.py",
+      "description": "Google 年龄验证"
+    },
+    {
+      "name": "run_playwright_google.py",
+      "description": "获取 SheerID 验证链接"
+    },
+    {
+      "name": "auto_bind_card.py",
+      "description": "虚拟卡绑定订阅"
+    },
+    {
+      "name": "change_password.py",
+      "description": "修改密码"
+    },
+    {
+      "name": "check_eligibility.py",
+      "description": "检测账号资格"
+    }
+  ],
+  "gui_scripts": [
+    {
+      "name": "create_window_gui.py",
+      "description": "浏览器窗口管理 GUI"
+    },
+    {
+      "name": "sheerid_gui.py",
+      "description": "SheerID 验证 GUI"
+    },
+    {
+      "name": "auto_all_in_one_gui.py",
+      "description": "一体化自动操作 GUI"
+    }
+  ],
+  "utilities": [
+    {
+      "name": "sheerid_verifier.py",
+      "description": "SheerID 批量验证"
+    },
+    {
+      "name": "sync_2fa_to_browser.py",
+      "description": "同步 2FA 密钥到浏览器"
+    },
+    {
+      "name": "set_language.py",
+      "description": "设置账号语言"
+    },
+    {
+      "name": "google_recovery.py",
+      "description": "Google 账号恢复"
+    },
+    {
+      "name": "browser_manager.py",
+      "description": "浏览器配置持久化与恢复"
+    }
+  ],
+  "gaps": {
+    "no_tests": true,
+    "missing_items": [
+      "单元测试",
+      "集成测试",
+      "E2E 测试"
+    ]
+  },
+  "ignored": {
+    "directories": [".venv", "node_modules", ".git", "dist", "build", "__pycache__"],
+    "files": ["*.pyc", "*.lock", "*.log"]
+  },
+  "truncated": false,
+  "next_steps": []
+}

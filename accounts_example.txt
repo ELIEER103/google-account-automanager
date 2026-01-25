@@ -1,0 +1,41 @@
+# ============================================
+# 账号信息配置文件 / Account Configuration
+# ============================================
+#
+# 分隔符配置（取消注释其中一行来选择分隔符）
+# Separator Configuration (Uncomment one line to select)
+#
+分隔符="----"
+# 分隔符="---"
+# 分隔符="|"
+# 分隔符=","
+# 分隔符=";"
+# 分隔符="\t"
+#
+# ============================================
+# 账号格式说明 / Account Format
+# ============================================
+#
+# 固定格式（字段顺序不能变）：
+# Format (Field order is fixed):
+#
+# 邮箱[分隔符]密码[分隔符]辅助邮箱[分隔符]2FA密钥
+# Email[Separator]Password[Separator]Backup Email[Separator]2FA Secret
+#
+# 示例 / Examples:
+# example@gmail.com----MyPass123----backup@email.com----ABCD1234EFGH5678
+# test@gmail.com----P@ssw0rd!----recovery@email.com----WXYZ9012STUV3456
+# user@gmail.com----ComplexP@ss#2024----helper@email.com
+#
+# 说明 / Notes:
+# 1. 密码可以包含任何字符（@#$%等特殊符号都支持）
+# 2. 辅助邮箱和2FA密钥是可选的
+# 3. 以 # 开头的行为注释，会被忽略
+# 4. 空行会被忽略
+#
+# ============================================
+# 请在下方添加你的账号（删除示例行）
+# Add your accounts below (remove example lines)
+# ============================================
+example1@gmail.com----YourPassword123----backup1@example.com----YOUR2FASECRETKEY1
+example2@gmail.com----AnotherPass456----backup2@example.com----YOUR2FASECRETKEY2
