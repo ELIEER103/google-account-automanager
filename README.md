@@ -10,7 +10,7 @@ English | **[中文](./README_CN.md)**
 
 **Need Gemini Pro accounts?** I provide:
 - **Pro Subscription Accounts** - Ready to use
-- **Eligible Accounts** - Student verified, ready for subscription
+- **Eligible Accounts** 
 - **Regular Accounts** - Clean accounts with 2FA
 
 <p align="center">
