@@ -4,20 +4,7 @@
 
 **[English](./README.md)** | 中文
 
----
 
-## 💎 Gemini 账号服务
-
-**需要 Gemini Pro 账号？** 我提供：
-- **Pro 成品号** - 已订阅，开箱即用
-- **资格号** - 已有学生验证资格
-- **普通号** - 干净账号，已设置 2FA
-
-<p align="center">
-  <img src="联系_wx.png" alt="微信联系" width="300" />
-</p>
-
----
 
 这是一个基于 **FastAPI + Vue 3 + Playwright/BitBrowser API** 的自动化管理系统，面向 Google 账号批处理场景，支持账号管理、窗口管理、2FA 设置/修改、资格验证、年龄验证与绑卡订阅等任务。
 
