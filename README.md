@@ -4,20 +4,7 @@
 
 English | **[中文](./README_CN.md)**
 
----
 
-## 💎 Gemini Account Service
-
-**Need Gemini Pro accounts?** I provide:
-- **Pro Subscription Accounts** - Ready to use
-- **Eligible Accounts** 
-- **Regular Accounts** - Clean accounts with 2FA
-
-<p align="center">
-  <img src="联系_wx.png" alt="WeChat Contact" width="300" />
-</p>
-
----
 
 A **FastAPI + Vue 3 + Playwright/BitBrowser API** automation system for batch Google account operations: account management, window management, 2FA setup/reset, eligibility verification, age verification, and card subscription binding.
 
